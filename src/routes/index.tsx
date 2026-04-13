@@ -1,10 +1,15 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
+import { ProblemSection } from "@/components/ProblemSection";
 import { StepsSection } from "@/components/StepsSection";
 import { PillarsSection } from "@/components/PillarsSection";
+import { ContentOSValueSection } from "@/components/ContentOSValueSection";
 import { PreviewWidgetSection } from "@/components/PreviewWidgetSection";
 import { PricingSection } from "@/components/PricingSection";
+import { BonusSection } from "@/components/BonusSection";
+import { FAQSection } from "@/components/FAQSection";
+import { FinalCTASection } from "@/components/FinalCTASection";
 import { Footer } from "@/components/Footer";
 
 export const Route = createFileRoute("/")({
@@ -26,10 +31,15 @@ function Index() {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
+      <ProblemSection />
       <StepsSection />
       <PillarsSection />
+      <ContentOSValueSection />
       <PreviewWidgetSection />
       <PricingSection />
+      <BonusSection />
+      <FAQSection />
+      <FinalCTASection />
       <Footer />
     </div>
   );
