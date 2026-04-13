@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { ContentLoopDiagram } from "@/components/ContentLoopDiagram";
 
 const pillars = [
   {
@@ -66,6 +67,9 @@ export function PillarsSection() {
             </div>
           ))}
         </div>
+
+        {/* Content Loop Diagram */}
+        <ContentLoopDiagram />
       </div>
     </section>
   );
