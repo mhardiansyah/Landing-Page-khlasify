@@ -31,14 +31,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Content OS PRO" },
+      { name: "description", content: "Content Preview Hub is a landing page for a Notion-based content planning and preview tool." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Content OS PRO" },
+      { property: "og:description", content: "Content Preview Hub is a landing page for a Notion-based content planning and preview tool." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Content OS PRO" },
+      { name: "twitter:description", content: "Content Preview Hub is a landing page for a Notion-based content planning and preview tool." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a29122b2-fa2e-41ed-89b3-afac780f55f9/id-preview-f34a49c3--3f39fa11-c57e-4154-b1af-3ce91a9541d5.lovable.app-1776065700705.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/a29122b2-fa2e-41ed-89b3-afac780f55f9/id-preview-f34a49c3--3f39fa11-c57e-4154-b1af-3ce91a9541d5.lovable.app-1776065700705.png" },
     ],
     links: [
       {
