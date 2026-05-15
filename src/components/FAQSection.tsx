@@ -7,45 +7,49 @@ import {
 
 const faqs = [
   {
-    q: "What exactly is Content OS?",
-    a: "Content OS is a complete Notion-based system for planning, previewing, and managing your social media content. It includes structured databases, calendar views, and a live preview widget.",
+    q: "Do I need to be good at Notion?",
+    a: "No. Beginner-friendly and ready to use. The template comes with clear instructions and everything is pre-configured for you.",
   },
   {
-    q: "Do I need a Notion account?",
-    a: "Yes, Content OS is built on top of Notion. You'll need a free or paid Notion account to duplicate and use the template.",
+    q: "Is this only for Instagram?",
+    a: "No. Built for multi-platform workflows. The preview widget supports Instagram, TikTok, and more platforms are coming soon.",
   },
   {
-    q: "What platforms does the Preview Widget support?",
-    a: "The Preview Widget currently supports Instagram (feed posts, carousels, reels), TikTok, and X (Twitter). More platforms are coming soon.",
+    q: "Can I use this with existing databases?",
+    a: "Yes. Fully modular. You can connect your existing Notion databases or start fresh with our pre-built templates.",
   },
   {
-    q: "Is this a subscription or a one-time purchase?",
-    a: "It's a one-time purchase. Pay once and get lifetime access, including all future updates.",
+    q: "Is this a subscription?",
+    a: "No. One-time purchase. Future updates included. Pay once and get lifetime access to all improvements.",
   },
   {
-    q: "Can I use this with my team?",
-    a: "Absolutely. The Pro plan includes team collaboration views with role-based access, task assignments, and approval workflows.",
-  },
-  {
-    q: "What if I need help setting it up?",
-    a: "We include step-by-step setup guides and video tutorials. Pro users also get priority support via email.",
+    q: "Can I start with Starter and upgrade later?",
+    a: "Yes, anytime. You can start with the free Starter plan and upgrade to Pro whenever you're ready.",
   },
 ];
 
 export function FAQSection() {
   return (
-    <section className="py-20 px-6 lg:px-8">
+    <section className="py-20 md:py-28 px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground text-center mb-10">
-          Frequently Asked Questions
-        </h2>
-        <Accordion type="single" collapsible className="w-full">
+        <div className="text-center mb-12">
+          <p className="text-sm font-bold text-primary uppercase tracking-widest mb-3">FAQ</p>
+          <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight text-foreground">
+            Frequently Asked Questions
+          </h2>
+        </div>
+
+        <Accordion type="single" collapsible className="w-full space-y-3">
           {faqs.map((faq, i) => (
-            <AccordionItem key={i} value={`faq-${i}`}>
-              <AccordionTrigger className="text-base font-semibold text-foreground">
+            <AccordionItem
+              key={i}
+              value={`faq-${i}`}
+              className="bg-card rounded-xl border px-6 shadow-sm data-[state=open]:shadow-md data-[state=open]:border-primary/20 transition-all duration-300"
+            >
+              <AccordionTrigger className="text-base font-semibold text-foreground hover:no-underline py-5">
                 {faq.q}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-muted-foreground leading-relaxed pb-5">
                 {faq.a}
               </AccordionContent>
             </AccordionItem>

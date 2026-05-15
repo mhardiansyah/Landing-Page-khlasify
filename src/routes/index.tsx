@@ -2,17 +2,17 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { HeroSection } from "@/components/HeroSection";
 import { ProblemSection } from "@/components/ProblemSection";
-import { StepsSection } from "@/components/StepsSection";
 import { PillarsSection } from "@/components/PillarsSection";
 import { ContentOSValueSection } from "@/components/ContentOSValueSection";
 import { PreviewWidgetSection } from "@/components/PreviewWidgetSection";
+import { WhyDifferentSection } from "@/components/WhyDifferentSection";
 import { PricingSection } from "@/components/PricingSection";
 import { BonusSection } from "@/components/BonusSection";
 import { FAQSection } from "@/components/FAQSection";
 import { FinalCTASection } from "@/components/FinalCTASection";
 import { Footer } from "@/components/Footer";
 
-export const Route = createFileRoute("/")({
+export const Route = createFileRoute("/")(  {
   component: Index,
   head: () => ({
     meta: [
@@ -32,10 +32,10 @@ function Index() {
       <Navbar />
       <HeroSection />
       <ProblemSection />
-      <StepsSection />
       <PillarsSection />
       <ContentOSValueSection />
       <PreviewWidgetSection />
+      <WhyDifferentSection />
       <PricingSection />
       <BonusSection />
       <FAQSection />
